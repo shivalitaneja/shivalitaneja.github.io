@@ -1,0 +1,150 @@
+body,
+html {
+  min-width: 320px;
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #440748;
+}
+
+#wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 1rem;
+  width: 90%;
+  min-width: 320px;
+}
+
+.wrapperSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 5rem;
+  height: 100%;
+}
+
+.wrapperSection h1 {
+  text-transform: uppercase;
+  /* color: #474747; */
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5rem;
+  font-size: 1.875em;
+  line-height: 1.375;
+  font-weight: 700;
+}
+
+.wrapperSection h3 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.25rem;
+  font-size: 0.75em;
+  line-height: 1.875;
+  font-weight: 300;
+}
+
+.wrapperSection p {
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.025rem;
+  font-size: 1em;
+  line-height: 1.875;
+  font-weight: 300;
+}
+
+.wrapperSection img {
+  object-fit: cover;
+  object-position: center;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.wrapperSection a {
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: flex;
+  width: fit-content;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1.25rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.25rem;
+  font-size: 0.625em;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  color: #440748;
+  border: solid 1px #cccccc;
+}
+
+.wrapperSection a:hover {
+  color: #440748;
+  border: solid 1px #440748;
+}
+
+@media screen and (max-width: 480px) {
+  body,
+  html {
+    height: auto;
+  }
+  #wrapper {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 1rem;
+  }
+  .wrapperSection {
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .content {
+    height: 60%;
+  }
+
+  .imageContainer {
+    height: 40%;
+  }
+
+  .wrapperSection h1 {
+    margin: 0;
+    letter-spacing: 0.4375rem;
+    font-size: 1.875em;
+    line-height: 1.375;
+    margin-bottom: 0.75rem !important;
+    padding: 0.5rem;
+  }
+  .wrapperSection h3 {
+    margin: 0;
+    letter-spacing: 0.21875rem;
+    font-size: 0.75em;
+    line-height: 1.875;
+    padding: 0.5rem;
+  }
+  .wrapperSection p {
+    margin: 0;
+    letter-spacing: 0.021875rem;
+    font-size: 1em;
+    line-height: 1.875;
+    padding: 0.5rem;
+  }
+
+  .wrapperSection a {
+    margin: 1rem 0;
+  }
+}
